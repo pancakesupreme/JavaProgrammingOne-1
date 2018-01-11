@@ -5,7 +5,7 @@ import java.util.Scanner;
  *
  * @author em0947744
  */
-public class C4_18 {
+public class C6_18 {
     /**
      * Main Method
      *
@@ -45,6 +45,7 @@ public class C4_18 {
     }
     
     // checks password length
+    // @param password checks if password is too long
     public static boolean lengthChecker(String password){
         boolean tooLong;
         tooLong = password.length() >= 8;
@@ -61,6 +62,7 @@ public class C4_18 {
     }
     
     //checks to see if password has at least 2 digits
+    // @param password check how many digits are in password
     public static boolean digitCounter(String password){
         return password.matches("(?=(.*?\\d){2})[a-zA-Z0-9]{2,}");
     }
