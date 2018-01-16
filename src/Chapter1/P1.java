@@ -12,7 +12,6 @@ public class P1 { //Class block
      *
      * @param args arguments from command line prompt
      */
-
     public static void main(String[] args) { //Method block
         System.out.println("Welcome to Java!");
     } //Method block
