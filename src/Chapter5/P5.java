@@ -4,24 +4,26 @@ import java.util.Scanner;
 
 /**
  * Program counts votes
- * 
+ *
  * @author Emory Meursing
  */
 public class P5 {
+
     /**
      * Main Method
      *
      * @param args arguments from command line prompt
      */
-     public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        String human; int yes = 0, no = 0;
-        
+        String human;
+        int yes = 0, no = 0;
+
         System.out.println("Please enter ‘Y’ to vote yes, ‘N’ to vote no, or ‘Q’ to quit voting: ");
         human = input.nextLine();
-        
-        while(!"Q".equals(human.toUpperCase())){
-            switch (human.toUpperCase()){
+
+        while (!"Q".equals(human.toUpperCase())) {
+            switch (human.toUpperCase()) {
                 case ("Y"):
                     yes++;
                     System.out.println("You have voted yes.");
@@ -38,9 +40,9 @@ public class P5 {
                     System.out.println("INVALID CODE: Enter ‘Y’ to vote yes, ‘N’ to vote no, or ‘Q’ to quit voting");
                     human = input.nextLine();
                     break;
-            } 
+            }
         }
-        if ("Q".equals(human.toUpperCase())){
+        if ("Q".equals(human.toUpperCase())) {
             System.out.println("Yes had " + yes + " votes, while no had " + no + " votes.");
             System.out.println("Come again!");
         }
